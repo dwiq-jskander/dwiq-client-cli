@@ -1,0 +1,61 @@
+{
+  "files.autoSave": "off",
+  "files.trimTrailingWhitespace": true,
+  "editor.insertSpaces": true,
+  "editor.detectIndentation": true,
+  "[typescript,javascript,docker,dockercompose,proto3,jsonc]": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
+    "editor.detectIndentation": true
+  },
+  "[python]": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 4,
+    "editor.detectIndentation": true,
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": true
+    }
+  },
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    ".terraform": true,
+    "node_modules": true,
+    "htmlcov": true,
+    "docs/coverage": true,
+    "packages": true,
+    ".mypy_cache": true,
+    ".ipynb_checkpoints": true,
+    "build": true,
+    "**/.DS_Store": true,
+    "**/__pycache__": true,
+    "**/*_cache": true
+  },
+  "isort.args": ["--profile", "black"],
+  "editor.formatOnSave": true,
+  "python.testing.pytestArgs": ["tests/unit"],
+  "python.languageServer": "Pylance",
+  "python.testing.unittestEnabled": false,
+  "python.testing.pytestEnabled": true,
+  "python.analysis.diagnosticSeverityOverrides": {
+    "reportMissingTypeStubs": "none",
+    "reportUnknownVariableType": "none",
+    "reportUnknownArgumentType": "none",
+    "reportUnknownParameterType": "none",
+    "reportMissingParameterType": "none",
+    "reportUnknownMemberType": "none",
+    "reportIncompatibleMethodOverride": "none",
+    "reportUnnecessaryComparison": "none",
+    "reportUnknownLambdaType": "none"
+  },
+  "editor.tabSize": 4,
+  "python.analysis.typeCheckingMode": "strict",
+  "python.analysis.extraPaths": [
+    "./ascertain",
+    "./tests"
+  ],
+  "python.formatting.provider": "none"
+}

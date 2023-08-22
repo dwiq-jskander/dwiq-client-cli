@@ -1,0 +1,17 @@
+{
+  "recommendations": [
+    "ms-azuretools.vscode-docker",
+    "davidanson.vscode-markdownlint",
+    "yzhang.markdown-all-in-one",
+    "redhat.vscode-yaml",
+    "visualstudioexptteam.vscodeintellicode",
+    "visualstudioexptteam.intellicode-api-usage-examples",
+    "ms-python.flake8",
+    "ms-python.mypy-type-checker",
+    "ms-python.black-formatter",
+    "ms-python.isort",
+    "ms-vscode.makefile-tools",
+    "ms-python.vscode-pylance",
+    "ms-python.python"
+  ]
+}

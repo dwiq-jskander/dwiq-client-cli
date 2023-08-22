@@ -1,0 +1,55 @@
+[tool.poetry]
+name = "dwiq-client-cli"
+version = "0.0.1"
+description = "Tool used to search client domain lists and other details like notification status"
+authors = ["Jesse Skander <jskander@darkwebiq.com>"]
+readme = "README.md"
+packages = [{include = "darkwebiq"}, { include = "tests" }]
+
+[tool.poetry.dependencies]
+python = "3.9.*"
+pydantic = "^1.10.7"
+google-cloud-storage = "^2.9.0"
+python-dotenv = "^1.0.0"
+google-cloud-resource-manager = "^1.10.1"
+google-cloud-logging = "^3.5.0"
+alembic = "^1.11.1"
+sqlalchemy-bigquery = "^1.7.0"
+google-cloud-bigquery-storage = "^2.22.0"
+
+[tool.poetry.group.functions.dependencies]
+functions-framework = "^3.4.0"
+google-api-python-client = "^2.89.0"
+google-auth = "^2.19.1"
+requests = "^2.31.0"
+
+[tool.poetry.group.test.dependencies]
+pytest = "^7.2.2"
+pytest-cov = "^4.0.0"
+python-dotenv = "^1.0.0"
+
+[tool.poetry.group.lint.dependencies]
+bandit = "^1.7.5"
+black = "^23.1.0"
+flake8 = "^6.0.0"
+mypy = "^1.1.1"
+pydocstyle = "^6.3.0"
+pylint = "^2.15.0"
+isort = "^5.12.0"
+types-requests = "^2.31.0.1"
+
+
+
+[tool.pytest.ini_options]
+log_cli = true
+log_cli_level = "DEBUG"
+log_format = "%(asctime)s %(levelname)s --- %(message)s"
+log_date_format = "%Y-%m-%d %H:%M:%S"
+pythonpath = [
+  "."
+]
+
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
